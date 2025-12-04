@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Suru Digital Care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#0f5f46;--bg2:#0b4938;--accent:#ffd85a;--card:#ffe78a;--text:#eaf6f0;--dark:#072e24}
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:var(--text);-webkit-font-smoothing:antialiased}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:24px 48px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo svg{width:64px;height:64px}
+.brand{color:var(--accent);font-weight:800;line-height:1;font-size:18px}
+.main-nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;align-items:center}
+.main-nav a,.main-nav button{color:var(--text);background:none;border:0;font-size:15px;cursor:pointer;text-decoration:none;opacity:0.95}
+.dropdown{position:relative}
+.dropdown-menu{position:absolute;top:34px;left:0;background:rgba(0,0,0,0.18);padding:10px;border-radius:8px;display:none;min-width:260px;backdrop-filter: blur(4px)}
+.dropdown:hover .dropdown-menu{display:block}
+.container{max-width:1200px;margin:0 auto;padding:40px 20px;display:flex;align-items:flex-start;gap:24px}
+.left{flex:1;min-width:480px}
+.left h1{font-size:64px;margin:0 0 18px;color:var(--text);font-weight:900;line-height:1.02;letter-spacing:0.5px}
+.lead{font-size:18px;color:#dff3ec;line-height:1.6;margin-bottom:22px;max-width:680px}
+.calls{display:flex;gap:12px;margin-top:8px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.paypal{background:#22b6e6;color:#072e24}
+.btn.email{background:#8b2f2f;color:#fff}
+.btn.whatsapp{background:#14532d;color:#fff}
+
+.right{width:420px;flex:0 0 420px;align-self:flex-start;margin-top:8px}
+.contact-card{background:var(--card);padding:22px;border-radius:18px;box-shadow:0 22px 40px rgba(0,0,0,0.35);color:var(--dark);position:relative}
+.contact-card h2{text-align:center;margin-top:0;color:var(--dark);letter-spacing:1px;font-size:20px}
+.field input,.field textarea,.field select{width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid rgba(0,0,0,0.06);font-size:15px;background:#ffffff}
+.field textarea{min-height:120px;resize:vertical}
+#submitBtn{width:100%;padding:12px;border-radius:10px;border:0;background:var(--bg1);color:var(--accent);font-weight:800;font-size:15px;cursor:pointer}
+.status{margin-top:12px;color:#072e24;font-weight:600;font-size:14px}
+
+.illustration{position:fixed;right:48px;bottom:40px;opacity:0.95;pointer-events:none;width:460px;height:300px}
+.svg-people{width:100%;height:100%}
+.svg-people .agent{animation:bob 4s ease-in-out infinite;transform-origin:80px 110px}
+@keyframes bob{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+
+.site-footer{position:relative;background:transparent;padding:26px 40px;color:#cfeee3;text-align:center;border-top:1px solid rgba(255,255,255,0.02);margin-top:48px}
+
+@media(max-width:1000px){
+  .container{flex-direction:column;align-items:stretch}
+  .right{width:100%;flex:unset}
+  .illustration{display:none}
+  .left h1{font-size:36px}
+}
+</style>
+</head><body>
+<header class="topbar">
+  <div class="logo"><a href="index.html" aria-label="home">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffe07a"/><stop offset="1" stop-color="#f2bf4a"/></linearGradient></defs>
+      <polygon points="100,12 12,172 188,172" fill="url(#g1)" stroke="#0b3b2e" stroke-width="4"/>
+      <polygon points="100,12 100,172 188,172" fill="#f5c46b" opacity="0.8"/>
+    </svg></a><div class="brand">SURU<br/><span>DIGITAL CARE</span></div></div>
+  <nav class="main-nav"><ul><li><a class="static" href="index.html">Home</a></li><li class="dropdown"><button>Services ▾</button>
+    <ul class="dropdown-menu"><li>Remote Technical Support</li><li>Account Support &amp; Recovery Guidance</li><li>Online Consulting</li><li>Website Support &amp; Troubleshooting</li><li>Device Setup Assistance</li><li>Data &amp; File Assistance</li><li>General Digital Help</li></ul></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+</header>
+
+<main class="container">
+  <section class="left">
+    <h1>DIGITAL SUPPORT &amp; ASSISTANCE SERVICES</h1>
+    <p class="lead">We provide remote digital assistance, online consulting &amp; guidance, technical help, account support, and troubleshooting services. All services are delivered online instantly. Please use the Get Estimate Now form to contact us.</p>
+    <div class="calls">
+      <a class="btn paypal" href="https://www.paypal.me/SuruSilver" target="_blank" rel="noopener">Pay with PayPal</a>
+      <a class="btn email" href="mailto:SuruDigitalCare@gmail.com">Email Us</a>
+      <a class="btn whatsapp" href="https://wa.me/9198866362633" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </section>
+
+  <aside class="right">
+    <form id="estimateForm" class="contact-card" autocomplete="off" novalidate>
+      <h2>GET ESTIMATE NOW</h2>
+      <label class="field"><input name="name" placeholder="Name" required/></label>
+      <label class="field"><input name="email" type="email" placeholder="Email" required/></label>
+      <label class="field"><input name="phone" placeholder="Phone (optional)"/></label>
+      <label class="field">
+        <select name="service" required>
+          <option value="">Service needed</option><option>Remote Technical Support</option><option>Technical Troubleshooting</option><option>Account Support Guidance</option><option>Online Digital Consulting</option><option>Website Support</option><option>Device Setup Guidance</option><option>Data &amp; File Management</option><option>General Digital Assistance</option>
+        </select>
+      </label>
+      <label class="field"><textarea name="message" placeholder="Explain your problem / service needed" required></textarea></label>
+      <button type="submit" id="submitBtn">SUBMIT REQUEST</button>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+  </aside>
+</main>
+
+<div class="illustration" aria-hidden="true">
+  <svg viewBox="0 0 700 400" class="svg-people" preserveAspectRatio="xMidYMid meet">
+    <g id="agents" transform="translate(0,0)">
+      <g class="agent" transform="translate(140,40)">
+        <circle cx="80" cy="60" r="36" fill="#f5c46b"/>
+        <rect x="45" y="110" width="70" height="60" rx="8" fill="#ffd85a"/>
+        <rect x="0" y="150" width="180" height="12" fill="#2c6a52" opacity="0.2"/>
+        <path d="M40 110 H120" stroke="#0b3b2e" stroke-opacity="0.05" stroke-width="18" stroke-linecap="round"></path>
+      </g>
+      <g class="agent" transform="translate(360,70)">
+        <circle cx="80" cy="60" r="36" fill="#f5c46b"/>
+        <rect x="45" y="110" width="70" height="60" rx="8" fill="#ffd85a"/>
+        <rect x="0" y="150" width="180" height="12" fill="#2c6a52" opacity="0.12"/>
+        <path d="M260 130 H420" stroke="#0b3b2e" stroke-opacity="0.05" stroke-width="18" stroke-linecap="round"></path>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2025 Suru Digital Care — All rights reserved.</p></div></footer>
+
+<script>
+async function safeParseJSON(resp){ const text = await resp.text(); try{ return {ok:resp.ok, json:JSON.parse(text)} }catch(e){ return {ok:resp.ok, text:text} } }
+document.addEventListener('DOMContentLoaded', function(){
+  const form=document.getElementById('estimateForm'), status=document.getElementById('status'), submitBtn=document.getElementById('submitBtn');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault(); submitBtn.disabled=true; status.textContent='Sending...';
+    const data=new FormData(form);
+    try{
+      const r=await fetch('/api/sendgrid_send',{method:'POST',body:data});
+      const parsed=await safeParseJSON(r);
+      if(parsed.json && parsed.json.success){ status.textContent='Request sent — we will contact you soon.'; form.reset(); submitBtn.disabled=false; return; }
+      const msg = parsed.json ? parsed.json.error : parsed.text;
+      status.textContent = 'Primary error: ' + (msg || 'Unknown error');
+    }catch(err){ status.textContent='Primary send failed: '+err.message; }
+    try{
+      const r2=await fetch('/server/sendgrid_send.php',{method:'POST',body:data});
+      const p2=await safeParseJSON(r2);
+      if(p2.json && p2.json.success){ status.textContent='Request sent — we will contact you soon.'; form.reset(); } else { status.textContent='Final error: ' + (p2.json ? p2.json.error : p2.text); }
+    }catch(err){ status.textContent='Final error: '+err.message; }
+    finally{ submitBtn.disabled=false }
+  });
+});
+</script>
+</body></html>
